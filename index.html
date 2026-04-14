@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alimentos Artesanos | Yogurt y productos naturales</title>
+    <!--<link rel="stylesheet" href="style.css">-->
+</head>
+<body>
+
+<!--barra de navegacion -->
+
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#">Alimentos Artesanos</a>
+            
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Acerca de</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Contacto</a></li>
+            <li><a href="#" id="loginLink">Iniciar sesion</a></li>
+            <li><a href="#" id="registerLink">Registrarse</a></li>
+        </ul>
+    </nav>
+
+<!-- ahora va la imagen principal-->
+
+<img class="banner-image"
+src="https://images.pexels.com/photos/4146454/pexels-photo-4146454.jpeg?auto=compress&cs=tinysrgb&w=1200&h=400&fit=crop"
+         alt="Yogur artesanal con frutas y granola, alimentos caseros"
+         loading="lazy">
+
+         <div class="review-section">
+            <h2>
+                Realizado con mucho amor, pasion y dedicacion 
+            </h2>
+            <p>
+                En <strong>Alimentos Artesanos</strong> llevamos unos 10 anios elaborando productos 100% naturales y artesanales, sin conservantes ni colorantes.
+            </p>
+            <div class="signature">-Familia Artesana, desde 2020-</div>
+         </div>
+
+    <header class="page-header">
+            <h1 class="main-title">Alimentos Artesano</h1>
+            <hr>
+            <p class="main-subtitle">Arte y ciencia a tu paladar</p>
+        </header>
+
+    <div class="form-container">
+        <h2>Contáctanos</h2>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="nombre">Nombre Completo:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" required></textarea>
+            </div>
+
+            <button type="submit">Enviar mensaje</button>
+        </form>
+    </div>
+
+    <footer>
+        <h1>Alimentos Artesano</h1>
+    </footer>
+
+    <div id="authModal" class="modal-overlay">
+    <div class="modal-container"> 
+        <span class="close-modal">&times;</span>
+        <div class="modal-tabs">
+            <button class="tab-btn active" data-tab="login">Iniciar sesión</button>
+            <button class="tab-btn" data-tab="register">Registrarse</button>
+        </div>
+
+        <!-- inicio sesion -->
+        <div id="loginForm" class="form-modal active-form">
+            <input type="email" placeholder="Correo electrónico" id="loginEmail" required>
+            <input type="password" placeholder="Contraseña" id="loginPassword" required>
+            <button id="doLogin">Entrar</button>
+            <p>¿No tienes cuenta? <a href="#" id="switchToRegister">Regístrate aquí</a></p>
+        </div>
+
+        <!-- registro -->
+        <div id="registerForm" class="form-modal">
+            <input type="text" placeholder="Nombre completo" id="regName">
+            <input type="email" placeholder="Correo electrónico" id="regEmail">
+            <input type="password" placeholder="Contraseña" id="regPassword">
+            <input type="password" placeholder="Confirmar contraseña" id="regConfirm">
+            <button id="doRegister">Crear cuenta</button>
+            <p>¿Ya tienes cuenta? <a href="#" id="switchToLogin">Inicia sesión</a></p>
+        </div>
+    </div>
+</div>
+
+    <script src="funcional.js"></script>
+
+</body>
